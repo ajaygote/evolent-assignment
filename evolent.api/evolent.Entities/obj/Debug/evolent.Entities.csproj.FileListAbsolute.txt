@@ -1,0 +1,10 @@
+E:\MVC Class\evolent\ajay\evolent.api\evolent.api\evolent.Entities\bin\Debug\evolent.Entities.dll
+E:\MVC Class\evolent\ajay\evolent.api\evolent.api\evolent.Entities\bin\Debug\evolent.Entities.pdb
+E:\MVC Class\evolent\ajay\evolent.api\evolent.api\evolent.Entities\obj\Debug\evolent.Entities.csprojResolveAssemblyReference.cache
+E:\MVC Class\evolent\ajay\evolent.api\evolent.api\evolent.Entities\obj\Debug\evolent.Entities.dll
+E:\MVC Class\evolent\ajay\evolent.api\evolent.api\evolent.Entities\obj\Debug\evolent.Entities.pdb
+E:\MVC Class\evolent\ajay\evolent.api\evolent.Entities\bin\Debug\evolent.Entities.dll
+E:\MVC Class\evolent\ajay\evolent.api\evolent.Entities\bin\Debug\evolent.Entities.pdb
+E:\MVC Class\evolent\ajay\evolent.api\evolent.Entities\obj\Debug\evolent.Entities.csprojResolveAssemblyReference.cache
+E:\MVC Class\evolent\ajay\evolent.api\evolent.Entities\obj\Debug\evolent.Entities.dll
+E:\MVC Class\evolent\ajay\evolent.api\evolent.Entities\obj\Debug\evolent.Entities.pdb
