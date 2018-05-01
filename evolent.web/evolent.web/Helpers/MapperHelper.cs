@@ -9,11 +9,6 @@ namespace evolent.web.Helpers
 {
     public static class MapperHelper
     {
-        /// <summary>
-        /// This method convert the ContactModel to the contactViewModel. Copies the property. Returns the list.
-        /// </summary>
-        /// <param name="contactModelList">List of ContactModel objects</param>
-        /// <returns>List of ContactViewModel objects</returns>
         public static List<ContactViewModel> ToContactViewModelList(this IEnumerable<ContactModel> contactModelList)
         {
             var contactViewModelList = new List<ContactViewModel>();
@@ -35,11 +30,6 @@ namespace evolent.web.Helpers
             return contactViewModelList;
         }
 
-        /// <summary>
-        /// This method converts the ContactViewModel object to the ContactModel. Copies the property. 
-        /// </summary>
-        /// <param name="contactViewModelList">ContactViewModel object</param>
-        /// <returns>ContactModel object</returns>
         public static List<ContactModel> ToContactModelList(this IEnumerable<ContactViewModel> contactViewModelList)
         {
             var contactModelList = new List<ContactModel>();
@@ -61,11 +51,6 @@ namespace evolent.web.Helpers
             return contactModelList;
         }
 
-        /// <summary>
-        /// This method converts ContactModel object to ContactViewModel object. Copies propery values.
-        /// </summary>
-        /// <param name="contactModel">ContactModel object</param>
-        /// <returns>ContactViewModel object</returns>
         public static ContactViewModel ToContactViewModel(this ContactModel contactModel)
         {
             return new ContactViewModel()
@@ -79,11 +64,6 @@ namespace evolent.web.Helpers
                     };
         }
 
-        /// <summary>
-        /// This method converts ContactViewModel to the ContactModel object. Copies property values.
-        /// </summary>
-        /// <param name="contactViewModel">ContactViewModel object</param>
-        /// <returns>ContactModel object</returns>
         public static ContactModel ToContactModel(this ContactViewModel contactViewModel)
         {
             return new ContactModel()

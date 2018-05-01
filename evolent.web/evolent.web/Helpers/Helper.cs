@@ -10,11 +10,6 @@ namespace evolent.web.Helpers
 {
     public class EvolentHelpers
     {
-        /// <summary>
-        /// This helper method return the value of Appsettings from the web.config file.
-        /// </summary>
-        /// <param name="key">key of the app settings</param>
-        /// <returns>value of the corresponding app settings</returns>
         public static string GetWebConfigValue(string key)
         {
             string value = string.Empty;
@@ -29,11 +24,6 @@ namespace evolent.web.Helpers
             return value;
         }
 
-        /// <summary>
-        /// Return the HTTPClient object used to call web api.
-        /// </summary>
-        /// <param name="accessToken">Access Token</param>
-        /// <returns>HttpClient object</returns>
         public static HttpClient GetHttpClient(string accessToken)
         {
             HttpClient objHttpClient = new HttpClient();  

@@ -14,34 +14,26 @@ namespace evolent.web.Controllers
 {
     public class ContactController : Controller
     {
-        #region Pirvate varaibles
-
+        #region Varaibles
         private IContactService _contactService;
-        
         #endregion
-
-        #region Constructors
-
-        /// <summary>
-        /// Initiallize the private variables
-        /// </summary>
-        public ContactController()
+        #region Constructor
+        public ContactController(IContactService contactService)
         {
-            _contactService = new ContactService();
-        } 
-
+            _contactService = contactService;
+        }
         #endregion
+
 
         // GET: /Contact/
-        [HttpGet]
         public async Task<ActionResult> Index()
         {
             var contactList = await _contactService.GetAll(); 
             return View(contactList.ToContactViewModelList());
         }
 
+        //
         // GET: /Contact/Details/5
-        [HttpGet]
         public async Task<ActionResult> Details(int? id)
         {
             if (id.HasValue) 
@@ -57,12 +49,12 @@ namespace evolent.web.Controllers
         }
 
         // GET: /Contact/Create
-        [HttpGet]
         public ActionResult Create()
         {
             return View();
         }
 
+        //
         // POST: /Contact/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -84,8 +76,8 @@ namespace evolent.web.Controllers
             return View(contactViewModel); 
         }
 
+        //
         // GET: /Contact/Edit/5
-        [HttpGet]
         public async Task<ActionResult> Edit(int? id)
         {
             if (id.HasValue)
@@ -100,6 +92,7 @@ namespace evolent.web.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
         }
 
+        //
         // POST: /Contact/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -121,8 +114,8 @@ namespace evolent.web.Controllers
             }
         }
 
+        //
         // GET: /Contact/Delete/5
-        [HttpGet]
         public async Task<ActionResult> Delete(int? id)
         {
             if (id.HasValue)
@@ -137,6 +130,7 @@ namespace evolent.web.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
         }
 
+        //
         // POST: /Contact/Delete/5
         [HttpPost]
         public async Task<ActionResult> Delete(int id)
