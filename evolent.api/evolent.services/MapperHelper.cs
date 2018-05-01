@@ -51,9 +51,10 @@ namespace evolent.services
         /// <returns>List of ContactModel object</returns>
         public static IEnumerable<ContactModel> ToContactModelList(this IEnumerable<Contact> contactDataList)
         {
-            var contactModelList = new List<ContactModel>();
+            List<ContactModel> contactModelList = null;
             if (contactDataList != null)
             {
+                contactModelList = new List<ContactModel>();
                 foreach (var contactData in contactDataList)
                 {
                     contactModelList.Add(new ContactModel()

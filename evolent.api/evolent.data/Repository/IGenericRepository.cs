@@ -25,19 +25,13 @@ namespace evolent.data.Repository
         /// Insert the new entity. 
         /// </summary>
         /// <param name="entity">Entity to be inserted</param>
-        void Insert(Entity entity);
+        Entity Insert(Entity entity);
 
         /// <summary>
         /// Update the provided entity.
         /// </summary>
         /// <param name="entity">Entity needs to be updated</param>
-        void Update(Entity entity);
-
-        /// <summary>
-        /// Deleted the entity 
-        /// </summary>
-        /// <param name="entity">Entity needs to be deleted</param>
-        void Delete(Entity entity);
+        void Update(Entity entity); 
 
         /// <summary>
         /// Delete the entity based on the primary key provided.

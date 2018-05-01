@@ -20,3 +20,14 @@ E:\MVC Class\evolent\ajay\evolent.api\evolent.services\bin\Debug\EntityFramework
 E:\MVC Class\evolent\ajay\evolent.api\evolent.services\obj\Debug\evolent.services.csprojResolveAssemblyReference.cache
 E:\MVC Class\evolent\ajay\evolent.api\evolent.services\obj\Debug\evolent.services.dll
 E:\MVC Class\evolent\ajay\evolent.api\evolent.services\obj\Debug\evolent.services.pdb
+E:\MVC Class\evolent\ajay\final\evolent.api\evolent.services\bin\Debug\evolent.services.dll
+E:\MVC Class\evolent\ajay\final\evolent.api\evolent.services\bin\Debug\evolent.services.pdb
+E:\MVC Class\evolent\ajay\final\evolent.api\evolent.services\bin\Debug\evolent.data.dll
+E:\MVC Class\evolent\ajay\final\evolent.api\evolent.services\bin\Debug\evolent.Entities.dll
+E:\MVC Class\evolent\ajay\final\evolent.api\evolent.services\bin\Debug\EntityFramework.dll
+E:\MVC Class\evolent\ajay\final\evolent.api\evolent.services\bin\Debug\evolent.data.pdb
+E:\MVC Class\evolent\ajay\final\evolent.api\evolent.services\bin\Debug\evolent.Entities.pdb
+E:\MVC Class\evolent\ajay\final\evolent.api\evolent.services\bin\Debug\EntityFramework.xml
+E:\MVC Class\evolent\ajay\final\evolent.api\evolent.services\obj\Debug\evolent.services.csprojResolveAssemblyReference.cache
+E:\MVC Class\evolent\ajay\final\evolent.api\evolent.services\obj\Debug\evolent.services.dll
+E:\MVC Class\evolent\ajay\final\evolent.api\evolent.services\obj\Debug\evolent.services.pdb

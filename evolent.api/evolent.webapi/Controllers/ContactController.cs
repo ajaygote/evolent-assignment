@@ -15,9 +15,9 @@ namespace evolent.webapi.Controllers
 
         #region Constructors
 
-        public ContactController()
+        public ContactController(IContactService contactService)
         {
-            _contactService = new ContactService();
+            _contactService = contactService;
         }
 
         #endregion
@@ -36,7 +36,7 @@ namespace evolent.webapi.Controllers
         [HttpGet]
         public IHttpActionResult Get(int id)
         {
-            var contact = _contactService.GetDetails(id);
+            var contact = _contactService.GetByKey(id);
             if (contact != null)
                 return Ok(contact);
             return NotFound();
@@ -47,8 +47,8 @@ namespace evolent.webapi.Controllers
         {
             if (ModelState.IsValid)
             {
-                int result = _contactService.Add(contact);
-                if (result > 0)
+                ContactModel result = _contactService.Insert(contact);
+                if (result !=null && result.ContactId > 0)
                     return Ok(result);
                 return InternalServerError(new Exception("Contact not created!"));
             }
@@ -60,9 +60,8 @@ namespace evolent.webapi.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (_contactService.Edit(contact))
-                    return Ok(contact);
-                return InternalServerError(new Exception("Contact not updated!"));
+                _contactService.Update(contact);
+                return Ok(contact); 
             }
             return BadRequest(ModelState);
         }
@@ -72,9 +71,8 @@ namespace evolent.webapi.Controllers
         {
             if (id > 0)
             {
-                if (_contactService.Delete(id))
-                    return Ok(true);
-                return InternalServerError(new Exception("Nod able to delete the contact!"));
+                _contactService.Delete(id);
+                return Ok(true); 
             }
             return BadRequest("ID should be greater than 0.");
         }

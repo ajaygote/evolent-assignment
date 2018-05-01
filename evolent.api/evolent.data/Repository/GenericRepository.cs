@@ -50,9 +50,10 @@ namespace evolent.data.Repository
         /// Insert the new entity. 
         /// </summary>
         /// <param name="entity">Entity to be inserted</param>
-        public void Insert(Entity entity)
+        public Entity Insert(Entity entity)
         {
             _dbSet.Add(entity);
+            return entity;
         }
 
         /// <summary>
