@@ -38,6 +38,13 @@ Run these application,
 	
 <add key="evolentAPIURL" value="http://localhost:63124/api"/>	
 
+For error logging ELMAH is used. To see the logs regarding the WEP API, you can browse the URL "http://localhost:63124/elmah.axd".
+If the web api project is running on the port 63124. Otherwise adjust the port number accordingly. 
+
+For error logging ELMAH is used. To see the logs regarding the MVC application, you can browse the URL "http://localhost:49588/elmah.axd".
+If the MVC project is running on the port 63124. Otherwise adjust the port number accordingly. 
+
+
 
 
 
